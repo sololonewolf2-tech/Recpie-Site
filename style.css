@@ -1,0 +1,94 @@
+body{
+	background-color:  hsl(30, 54%, 90%);
+}
+main {
+	display:flex;
+	justify-content: center;
+	margin: 8rem auto;       /* CHANGED: auto sides so it centers on wide screens */
+	max-width: 46rem;        /* ADDED: card won't stretch on large screens */
+	padding: 0 1rem;         /* ADDED: breathing room on small screens */
+}
+img {
+	width:100%;
+	border-radius: 1.5rem;
+}
+.container {
+	align-items: center;
+	background-color: hsl(0, 0%, 100%);
+	padding: 2rem;
+	border-radius: 1.5rem;
+}
+.image {
+	display:flex;
+	justify-content: center;
+}
+h1, h2 {
+	font-family:Young Serif ;
+	font-weight: 400;
+}
+h2 {
+	color:  hsl(14, 45%, 36%);
+}
+h1 {
+	color: hsl(24, 5%, 18%);
+}
+.dnd {
+	background-color: hsl(330, 100%, 98%) ;
+	border-radius: 0.8rem;
+	padding-bottom:0.2rem;
+	padding-top: 0.2rem;
+	padding-right: 0.2rem;
+	padding-left: 0.2rem
+}
+p, li {
+	font-family: Outfit;
+	color: hsl(30, 10%, 34%);
+}
+.h3 {
+	color: hsl(332, 51%, 32%);
+	margin-left: 1rem;
+	font-weight: 700;
+	font-family: Outfit;
+}
+span {
+	color: hsl(30, 10%, 34%);
+	font-weight: 600;
+}
+li {
+	padding-left: 0.4rem;
+	padding-bottom: 0.6rem;
+}
+.dm {
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.table {
+	display:flex;
+	flex-direction: column;
+}
+.col1 {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.cn {
+	/* REMOVED: margin-right: 24rem — justify-content: space-between already handles this */
+	color: hsl(14, 45%, 36%);
+	font-weight: 700;
+}
+.cr {
+	margin-left: 2rem;
+}
+
+/* ADDED: mobile breakpoint — only overrides what breaks */
+@media (max-width: 600px) {
+	main {
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+		border-radius: 0;
+	}
+	img {
+		border-radius: 0;
+	}
+}
